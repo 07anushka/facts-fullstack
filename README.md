@@ -61,7 +61,7 @@ Frontend Development
 - Added search filter
 - Applied basic styling
 
-Integration
+4. Integration
 
 Connected React with Django
 Fixed JSON and CORS issues
