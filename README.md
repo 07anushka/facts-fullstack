@@ -2,23 +2,28 @@
 
 ## 1. Introduction
 
-This project is developed as part of the *Intern Technical Assignment*.  
+This project is developed as part of the Intern Technical Assignment.  
 It is a full-stack web application where:
 
 - Backend is built using Django REST Framework  
 - Frontend is built using React JS  
 - Application is deployed on AWS  
-- Source code is maintained in GitHub
+- Source code is maintained in GitHub  
 
-The application displays a list of facts fetched from the backend API and shows them in a simple user interface.
+Live Application:
+
+Frontend URL:  
+http://facts-frontend-anu.s3-website.eu-north-1.amazonaws.com
+
+Backend API URL:  
+http://13.53.174.163:8000/facts/
 
 ---
 
 ## 2. Technologies Used
 
 ### Backend
-- Python  
-- Django  
+- Python   
 - Django REST Framework  
 
 ### Frontend
@@ -27,9 +32,9 @@ The application displays a list of facts fetched from the backend API and shows 
 - HTML & CSS  
 
 ### Cloud & Tools
-- AWS (Hosting)  
+- AWS  
 - Git & GitHub  
-- VS Code
+- VS Code  
 
 ---
 
@@ -39,9 +44,7 @@ The application displays a list of facts fetched from the backend API and shows 
 
 - Created Django project and app  
 - Installed Django REST Framework  
-- Created API endpoint:
-
-
+- Created API endpoint  
 - API returns JSON response:
 
 ```json
@@ -50,70 +53,51 @@ The application displays a list of facts fetched from the backend API and shows 
   { "id": 2, "fact": "Water boils at 100°C." },
   { "id": 3, "fact": "Earth has one moon." }
 ]
-Tested API in browser
-Enabled CORS for React connection
+```
 
-Frontend Development
+- Tested API in browser  
+- Enabled CORS  
 
-- Created React application
-- Used fetch() to call backend API
-- Displayed list of facts
-- Added search filter
-- Applied basic styling
+### Frontend Development
 
-4. Integration
+- Created React application  
+- Used fetch() to call backend  
+- Displayed facts  
+- Added search filter  
+- Styled UI  
 
-Connected React with Django
-Fixed JSON and CORS issues
-Tested complete flow
+---
 
+## 4. How to Run Locally
 
-5. How to Run the Project Locally
+### Backend
 
-Step 1 – Clone Repository
-git clone <your-github-repo-url>
-cd project-root
-
-Step 2 – Run Backend
+```
 cd backend
 python manage.py runserver
+```
 
-Backend will run at:
-http://127.0.0.1:8000/api/facts/
+### Frontend
 
-Step 3 – Run Frontend
-
-Open new terminal:
-
+```
 cd frontend
 npm install
 npm start
-
-Frontend will run at:
-http://localhost:5173/
-
-6. AWS Deployment Steps
+```
+### AWS Deployment Steps
 
 Backend
 Created AWS instance
 Installed Python and dependencies
 Uploaded Django project
 Ran server and made it public
+---
 
-Frontend
-Created production build using:
-npm run build
+## 5. What I Learned
 
-Hosted frontend on AWS
-
-Connected with backend public API
-
-Through this assignment I learned:
-* How to create REST API using Django
-* How React communicates with backend
-* Fetching JSON data in React
-* Handling CORS issues
-* Debugging API errors
-* Full stack project structure
-* Basic AWS deployment
-* GitHub version control
+- Building REST API using Django  
+- Connecting React with backend  
+- Handling CORS  
+- Debugging fetch errors  
+- AWS deployment  
+- GitHub version control  
